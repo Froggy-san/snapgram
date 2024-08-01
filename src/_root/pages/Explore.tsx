@@ -16,7 +16,6 @@ const Explore = () => {
 
   const { data: posts, fetchNextPage, hasNextPage } = useGetPosts();
 
-  console.log(posts, "{{{");
   const [searchValue, setSearchValue] = useState("");
   const debouncedValue = useDebounce(searchValue, 500);
   const { data: searchedPosts, isFetching: isSearchFetching } =
@@ -40,8 +39,6 @@ const Explore = () => {
     !shouldShowSearchResults &&
     posts.pages.every((item) => item?.documents.length === 0);
 
-  console.log(shouldShowPosts, "SHOULD SHOW POSTS");
-  console.log(searchedPosts, "SEARCHED POSTS");
   return (
     <div className="explore-container">
       <div className="explore-inner_container">
