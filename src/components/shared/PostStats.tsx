@@ -29,10 +29,6 @@ const PostStats = ({ post, userId }: PostStatsProps) => {
     useDeleteSavedPost();
 
   const { data: currnetUser } = useGetCurrentUser();
-  console.log(
-    currnetUser,
-    "currentuser here?? the useUserContext doens't have a value of data how is it retruning it ? "
-  );
 
   const savedPostRecord = currnetUser?.save.find(
     (record: Models.Document) => record.post.$id === post?.$id

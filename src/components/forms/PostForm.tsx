@@ -80,7 +80,7 @@ const PostForm = ({ post, action }: PostFormProps) => {
       return;
     }
 
-    console.log(values, "Values of the post form !!!");
+
     // Do something with the form values.
     // ✅ This will be type-safe and validated.
     const newPost = await createPost(
@@ -95,7 +95,6 @@ const PostForm = ({ post, action }: PostFormProps) => {
     navigate("/");
   }
 
-  console.log(post?.imageUrl, "imageUrl ????");
   return (
     <Form {...form}>
       <form
@@ -125,7 +124,7 @@ const PostForm = ({ post, action }: PostFormProps) => {
           control={form.control}
           name="file"
           render={({ field }) => {
-            console.log(field, "field ?????");
+        
             return (
               <FormItem>
                 <FormLabel className="shad-form_label">Add Photos</FormLabel>

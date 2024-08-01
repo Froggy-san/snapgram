@@ -50,9 +50,9 @@ export const multiFormatDateString = (timestamp: string = ""): string => {
   }
 };
 export const checkIsLiked = (likeList: string[], userId: string) => {
-  console.log(
-    likeList.includes(userId),
-    "this log coming from utils file, is it a boolean?"
-  );
+  // console.log(
+  //   likeList.includes(userId),
+  //   "this log coming from utils file, is it a boolean?"
+  // );
   return likeList.includes(userId);
 };

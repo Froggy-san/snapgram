@@ -12,7 +12,6 @@ const SearchResults = ({
   isSearchFetching,
   searchedPosts,
 }: SearchResaultsProps) => {
-  console.log(searchedPosts, "SEARCHED POSTS");
   if (isSearchFetching) return <Loader />;
   //@ts-ignore
   if (searchedPosts && searchedPosts.documents.length > 0) {

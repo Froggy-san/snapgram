@@ -9,7 +9,6 @@ import { useEffect } from "react";
 const LeftSidebar = () => {
   const { pathname } = useLocation();
   const { user } = useUserContext();
-  console.log(pathname, "pahtname here ");
 
   const navigate = useNavigate();
 

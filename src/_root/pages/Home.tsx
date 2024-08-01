@@ -7,7 +7,6 @@ import { Loader } from "lucide-react";
 function Home() {
   const { data: posts, isPending: isPostLoading } = useGetRecentPosts();
 
-  console.log(posts);
   return (
     <div className="flex flex-1">
       <div className="home-container">

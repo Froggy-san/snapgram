@@ -18,17 +18,17 @@ const FiledUploader = ({ fieldChange, mediaUrl }: FileUploaderProps) => {
   // Please ! NOTE  that we improted the type from dropzone as well . the type is called FileWithPath .
   const onDrop = useCallback(
     (acceptedFiles: FileWithPath[]) => {
-      console.log(acceptedFiles, "accepted files here !!"); // [File]
-      console.log(acceptedFiles[0], "accepted files[0] here !!"); // File {path: '420169864_773195031516521_1967862260444229526_n (1).jpg', name: '420169864_773195031516521_1967862260444229526_n (1).jpg', lastModified: 1705520606701, lastModifiedDate: Wed Jan 17 2024 21:43:26 GMT+0200 (Eastern European Standard Time), webkitRelativePath: '', …} .
+      // console.log(acceptedFiles, "accepted files here !!"); // [File]
+      // console.log(acceptedFiles[0], "accepted files[0] here !!"); // File {path: '420169864_773195031516521_1967862260444229526_n (1).jpg', name: '420169864_773195031516521_1967862260444229526_n (1).jpg', lastModified: 1705520606701, lastModifiedDate: Wed Jan 17 2024 21:43:26 GMT+0200 (Eastern European Standard Time), webkitRelativePath: '', …} .
 
-      console.log(
-        URL.createObjectURL(acceptedFiles[0]),
-        "accepted files as an object here !!"
-      ); // blob:http://localhost:5173/a2ccf787-a3b6-4677-be12-581aed9c4033 accepted files as an object here !!
+      // console.log(
+      // URL.createObjectURL(acceptedFiles[0]),
+      // "accepted files as an object here !!"
+      // ); // blob:http://localhost:5173/a2ccf787-a3b6-4677-be12-581aed9c4033 accepted files as an object here !!
 
-      console.log(fileUrl, "fileUrl here !!!");
-      console.log(file, "file Array here !!!");
-      console.log(mediaUrl, "mediaUrl  here !!!"); // the mediaUrl isn't used anywhere in the code as of now.
+      // console.log(fileUrl, "fileUrl here !!!");
+      // console.log(file, "file Array here !!!");
+      // console.log(mediaUrl, "mediaUrl  here !!!"); // the mediaUrl isn't used anywhere in the code as of now.
 
       // Do something with the files
       setFile(acceptedFiles);

@@ -39,8 +39,6 @@ const SigninForm = () => {
 
   // Handler
   const handleSignin = async (user: z.infer<typeof SigninValidation>) => {
-    console.log("WE are here");
-
     const session = await signinAccount({
       email: user.email,
       password: user.password,
@@ -52,9 +50,6 @@ const SigninForm = () => {
       });
 
     const isLoggedIn = await checkAuthUser();
-
-    console.log(isLoggedIn);
-    console.log("navigationg");
 
     if (isLoggedIn) {
       form.reset();

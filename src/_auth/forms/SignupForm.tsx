@@ -56,7 +56,6 @@ const SignupForm = () => {
         title: "Sign up failed. Please try again.",
       });
     }
-    console.log(newUser);
 
     const session = await signinAccount({
       email: user.email,
